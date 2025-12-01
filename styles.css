@@ -18,7 +18,18 @@ ul {
 }
 
 /* DESIGN SYSTEM */
-
+:root {
+    --clr-primary-txt: #303b59;
+    --clr-primary-bkdg: #ecf2ff;
+    --clr-li-bkdg-reaction: #fff6f6;
+    --clr-li-txt-reaction: #ff5555;
+    --clr-li-bkdg-memory: #fffbf4;
+    --clr-li-txt-memory: #ffb21e;
+    --clr-li-bkdg-verbal: #f2fcf9;
+    --clr-li-txt-verbal: #00bb8f;
+    --clr-li-bkdg-visual: #f3f4fd;
+    --clr-li-txt-visual: #1125d6;
+}
 
 
 /* STYLING */
