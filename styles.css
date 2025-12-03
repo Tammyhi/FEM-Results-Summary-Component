@@ -17,6 +17,14 @@ ul {
     padding: 0;
 }
 
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
 /* DESIGN SYSTEM */
 :root {
     --clr-primary-txt: #303b59;
@@ -47,11 +55,37 @@ ul {
     --font-size-xxl: 72px;
 }
 
+/* BASE CLASSES - default styles for html elements */
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('/assets/fonts/HankenGrotesk-VariableFont_weight.tff') format('truetype');
+}
 
-/* STYLING */
+body {
+    font-family: 'HankenGrotesk', sans-serif;
+    font-size: var(--font-size-xs);
+    background-color: var(--clr-primary-bkdg);
+}
+
+/* LAYOUT CLASSES */
 main {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.result, .score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MODULE CLASSES - indep components or elements like buttons */
+
+/* STATE CLASSES */
