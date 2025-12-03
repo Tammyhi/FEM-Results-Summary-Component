@@ -70,6 +70,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    line-height: 130%;
 }
 
 button {
@@ -112,6 +113,8 @@ ul {
     display: flex;
     gap: var(--spacing-200);
     align-items: center;
+    font-weight: medium;
+    font-size: var(--font-size-s);
 }
 
 .result {
@@ -120,6 +123,15 @@ ul {
     max-width: 50%;
     border-radius: 32px;
     z-index: 2;
+    gap: var(--spacing-400);
+    padding: var(--spacing-400);
+}
+
+.score-rank {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    align-items: center;
 }
 
 .overall-score {
@@ -148,6 +160,15 @@ ul {
 
 
 /* MODULE CLASSES - indep components or elements like buttons */
+.score-grade {
+    font-weight: bold;
+}
+
+.summary p {
+    font-weight: bold;
+    font-size: var(--font-size-m);
+}
+
 .emph-txt {
     color: white;
 }
