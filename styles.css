@@ -27,7 +27,8 @@ button {
 
 /* DESIGN SYSTEM */
 :root {
-    --clr-primary-txt: #303b59;
+    --clr-secondary-txt-dark: #303b59;
+    --clr-secondary-txt-light: #cac9ff;
     --clr-primary-bkdg: #ecf2ff;
     --clr-li-bkdg-reaction: #fff6f6;
     --clr-li-txt-reaction: #ff5555;
@@ -37,8 +38,8 @@ button {
     --clr-li-txt-verbal: #00bb8f;
     --clr-li-bkdg-visual: #f3f4fd;
     --clr-li-txt-visual: #1125d6;
-    --clr-bkgd-gradient: linear-gradient(#7755ff,#2f2ce9);
-    --clr-circle-gradient: linear-gradient(#4d21c9, #2521c9);
+    --clr-result-gradient: linear-gradient(#7755ff,#2f2ce9);
+    --clr-score-gradient: linear-gradient(#4d21c9, #2521c9);
 
     --spacing-100: 8px;
     --spacing-200: 16px;
@@ -58,13 +59,18 @@ button {
 /* BASE CLASSES - default styles for html elements */
 @font-face {
     font-family: 'HankenGrotesk';
-    src: url('/assets/fonts/HankenGrotesk-VariableFont_weight.tff') format('truetype');
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 }
 
 body {
     font-family: 'HankenGrotesk', sans-serif;
     font-size: var(--font-size-xs);
     background-color: var(--clr-primary-bkdg);
+}
+
+button {
+    color: white;
+    background-color: var(--clr-secondary-txt-dark);
 }
 
 /* LAYOUT CLASSES */
@@ -75,17 +81,79 @@ main {
     align-items: center;
 }
 
-.result, .score {
+.flex {
     display: flex;
+}
+
+.col {
     flex-direction: column;
+}
+
+.cross-axis-center {
     align-items: center;
 }
 
-.summary {
-    display: flex;
-    flex-direction: column;
+.result {
+    background: var(--clr-result-gradient); /* linear gradient is an image type, background-color only for single solid color val */
 }
 
-/* MODULE CLASSES - indep components or elements like buttons */
+.score {
+    background: var(--clr-score-gradient);
+}
 
+.summary {
+    background-color: white;
+}
+
+
+/* MODULE CLASSES - indep components or elements like buttons */
+.emph-txt {
+    color: white;
+}
+
+.secondary-txt-dark {
+    color: var(--clr-secondary-txt-dark);
+}
+
+.secondary-txt-light {
+    color: var(--clr-secondary-txt-light);
+}
+
+.score-grade {
+    color: black;
+}
+
+.reaction-txt {
+    color: var(--clr-li-txt-reaction);
+}
+
+.reaction-score {
+    background-color: var(--clr-li-bkdg-reaction);
+}
+
+.memory-txt {
+    color: var(--clr-li-txt-memory);
+}
+
+.memory-score {
+    background-color: var(--clr-li-bkdg-memory);
+}
+
+.verbal-txt {
+    color: var(--clr-li-txt-verbal);
+}
+
+.verbal-score {
+    background-color: var(--clr-li-bkdg-verbal);
+}
+
+.visual-txt {
+    color: var(--clr-li-txt-visual);
+}
+
+.visual-score {
+    background-color: var(--clr-li-bkdg-visual);
+}
+
+ 
 /* STATE CLASSES */
