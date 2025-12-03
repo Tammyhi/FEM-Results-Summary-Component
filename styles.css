@@ -88,6 +88,9 @@ li {
 }
 
 /* LAYOUT CLASSES */
+main {
+    position: relative;
+}
 
 ul {
     gap: var(--spacing-200);
@@ -126,6 +129,12 @@ ul {
 .white-bkgd {
     z-index: 1;
     background-color:white;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 32px 0 0 32px;
 }
 
 .summary {
