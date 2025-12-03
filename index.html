@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
+  <main class="flex">
     <section class="result flex col cross-axis-center">
+      <section class="white-bkgd"></section>
       <p class="secondary-txt-light">Your Result</p>
-      <section class="score flex col cross-axis-center">
+      <section class="overall-score flex col cross-axis-center">
         <p class="emph-txt">76</p>
         <p class="secondary-txt-light">of 100</p>
       </section>
@@ -21,9 +22,12 @@
     <section class="summary flex col">
       <p>Summary</p>
 
-      <ul>
+      <ul class="flex col">
         <li class="reaction-score">
-          <span class="reaction-txt">Reaction</span>
+          <span class="reaction-txt score-txt">
+            <img src="./assets/images/icon-reaction.svg" />
+            <span>Reaction</span>
+          </span>
           <span>
             80
             <span class="secondary-txt-dark"> / 100</span>
@@ -31,7 +35,10 @@
         </li>
 
         <li class="memory-score">
-          <span class="memory-txt">Memory</span>
+          <span class="memory-txt score-txt">
+            <img src="./assets/images/icon-memory.svg" />
+            <span>Memory</span>
+          </span>
           <span>
             92
             <span class="secondary-txt-dark"> / 100</span>
@@ -39,7 +46,10 @@
         </li>
 
         <li class="verbal-score">
-          <span class="verbal-txt">Verbal</span>
+          <span class="verbal-txt score-txt">
+            <img src="./assets/images/icon-verbal.svg" />
+            <span>Verbal</span>
+          </span>
           <span>
             61
             <span class="secondary-txt-dark"> / 100</span>
@@ -47,7 +57,10 @@
         </li>
 
         <li class="visual-score">
-          <span class="visual-txt">Visual</span>
+          <span class="visual-txt score-txt">
+            <img src="./assets/images/icon-visual.svg" />
+            <span>Visual</span>
+          </span>
           <span>
             72
             <span class="secondary-txt-dark"> / 100</span>
